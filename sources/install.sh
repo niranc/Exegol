@@ -1862,6 +1862,7 @@ function install_pwndb() {
   git -C /opt/tools/ clone https://github.com/davidtavarez/pwndb.git
   cd /opt/tools/pwndb
   chmod +x pwndb.py
+  ln -s /opt/tools/pwndb/pwndb.py /usr/bin/pwndb
 }
 
 function install_robotstester() {
